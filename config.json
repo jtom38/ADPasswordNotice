@@ -1,0 +1,57 @@
+{
+    "DebugMode" : true,
+    "OU" : [
+        "OU=Users,DC=contoso,DC=com"
+    ],
+    "PSLog" : {
+        "CSV" : {
+            "Levels" : [
+                "Information",
+                "Warning",
+                "Error",
+                "Debug"
+            ],
+            "LogPath" : ".\\log.csv",
+            "MessageTemplate" : "#DateTime#, #CallingFile#, #LineNumber#, #Level#, #Message#, #ErrorCode#"
+        },
+        "Console" : {
+            "Levels" : [
+                "Information",
+                "Warning",
+                "Error",
+                "Debug"
+            ],
+            "MessageTemplate" : "[#DateTime#] [#Level#] #Message#"
+        }
+    },
+    "SMTP" : {
+        "Prod":  {
+            "Server":  "smtp.office365.com",
+            "Port":  587,
+            "From":  "",
+            "To":  "",
+            "CC" : "",
+            "BCC" : "",
+            "Credentials":  
+            {
+                "UserName" : "",
+                "Password" : "",
+                "GeneratedBy" : ""
+            }
+        },
+        "Debug" : {
+            "Server":  "smtp.office365.com",
+            "Port":  587,
+            "From":  "",
+            "To":  "",
+            "CC" : "",
+            "BCC" : "",
+            "Credentials":  
+            {
+                "UserName" : "",
+                "Password" : "",
+                "GeneratedBy" : ""
+            }
+        }
+    }
+}
